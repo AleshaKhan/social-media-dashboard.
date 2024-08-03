@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="profile-section">
+            <img src="profile.jpg" alt="User Profile" class="profile-pic">
+            <span class="username">Username</span>
+        </div>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+    
+    <div class="dashboard">
+        <div class="metrics">
+            <h2>Follower Growth</h2>
+            <canvas id="followerGrowthChart"></canvas>
+        </div>
+        <div class="metrics">
+            <h2>Engagement Rates</h2>
+            <canvas id="engagementRatesChart"></canvas>
+        </div>
+        <div class="metrics">
+            <h2>Activity Timelines</h2>
+            <canvas id="activityTimelinesChart"></canvas>
+        </div>
+    </div>
+    
+    <aside class="sidebar">
+        <div class="quick-stats">
+            <h3>Quick Stats</h3>
+            <p>Followers: <span id="followersCount">1200</span></p>
+            <p>Likes: <span id="likesCount">500</span></p>
+            <p>Shares: <span id="sharesCount">200</span></p>
+        </div>
+        <ul class="additional-nav">
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </aside>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
